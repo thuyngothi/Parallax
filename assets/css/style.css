@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color: #777;
+}
+body {
+    font-family: Lato, sans-serif;
+}
+
+.header {
+    background-color: none;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);;
+}
+
+.nav-bar .menu-list {
+    padding: 0;
+}
+
+.nav-bar .menu-list li {
+    float: left;
+    list-style: none;
+    padding: 8px 20px;
+}
+
+.menu-list li a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 2;
+}
+.menu-list li i {
+    padding: 0 4px;
+}
+.menu-list li .fa-user{
+    font-size: 14px;
+}
+
+.menu-list li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+.menu-list li:hover a{
+    color: black;
+}
+
+.header .search-btn {
+    padding: 8px 16px;
+    float: right;
+    line-height: 2;
+}
+
+.header .search-btn:hover {
+    background-color: red;
+    cursor: pointer;
+}
+.header .search-btn:hover i{
+    color: #fff;
+}
+
+/* CSS MY - LOGO */
+.my-logo {
+    height: 70vh;
+    position: relative;
+}
+.my-logo .bg-image {
+    background: url('../img/background-img/parallax1.jpg') top center /cover no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.my-logo .logo {
+    position: absolute;
+    padding: 12px 24px;
+    color: #fff;
+    background-color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    letter-spacing: 8px;
+}
+
+.my-logo {
+    opacity: 0.8;
+}
+
+/* CSS CONTENT */
+.content {
+    
+}
+/* .about-section .main-heading {
+    font-size: 24px;
+} */
+
+.main-heading {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.8;
+    text-transform: uppercase;
+}
+.sub-heading {
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.about-section {
+    padding: 64px 16px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-section .about-content p {
+    line-height: 1.8;
+    font-size: 15px
+}
+
+.about-content .row-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.row-2  .about-image,
+.row-2 .about-desc {
+    width: 50%;
+    padding: 12px 24px;
+}
+.row-2  .about-image img {
+    width: 100%;
+    opacity: 0.6;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.about-image img:hover {
+    opacity: 1;
+}
+.about-image .image-name {
+    padding: 15px 0;
+    line-height: 1.8;
+    text-align: center;
+    font-weight: 600;
+}
+
+.about-desc p {
+    margin: 15px 0;
+}
+
+/* CSS STRENGTH */
+.strength .strength-heading {
+    text-align: center;
+    padding: 16px 0;
+    margin: 18px 0;
+    font-size: 18px;
+}
+
+.quality-item .type-name{
+    letter-spacing: 8px;
+    margin: 15px 0;
+}
+
+.quality-item .quality-measurement {
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+}
+
+.quality-measurement .percent{
+    background-color: #616161 ;
+    width: var(--percent);
+    line-height: 2.5;
+    color: #fff;
+    text-align: center;
+}
+
+/* CSS PORTFOLIO */
+
+.working-done {
+    padding: 16px 0;
+    background-color: #616161;
+}
+
+.total-list {
+    display: flex;
+}
+.total-item {
+    margin: 16px 0;
+    line-height: 1.8;
+    width: 24%;
+    text-align: center;
+}
+
+.total-item p{
+    color: #fff;
+}
+.total-item .number {
+    font-size: 25px;
+}
+
+.portfolio-image {
+ background: url('../img/background-img/parallax2.jpg') top center /cover no-repeat;
+}
+
+/* CSS MY WORK */
+.mywork-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 64px 16px;
+}
+
+.mywork-images {
+    margin-bottom: 64px;
+}
+.mywork-images .row-images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row-images .work-image {
+    padding: 8px;
+    width: 25%;
+}
+
+.work-image img{
+    width: 100%;
+}
+.work-image img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.mywork-section .loadmore-btn {
+    width: 100%;
+    text-align: center;
+}
+.mywork-section .loadmore-btn button{
+    border: none;
+    padding: 12px 24px;
+    line-height: 2;
+    color: black;
+}
+.loadmore-btn button:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* CSS CONTACT */
+.contact-image {
+    background: url('../img/background-img/parallax3.jpg') top center /cover no-repeat;
+   }
+
+/* CSS WORKPLACE */
+.workplace-section {
+    padding: 64px 16px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.workplace-wrapper {
+    display: flex;
+    margin: 16px 0;
+    padding: 32px 0;
+}
+.workplace-wrapper .map {
+    width: 33%;
+    padding: 0 16px;
+}
+.workplace-wrapper .workplace-content {
+    width: 66%;
+}
+
+.workplace-wrapper .map img {
+    width: 100%;
+    border-radius: 4px;
+}
+.address .infor {
+    font-size: 18px;
+    line-height: 1.8;
+}
+.address .infor i {
+    padding-right: 12px;
+    font-size: 22px;
+    /* vertical-align: middle; */
+}
+.address .infor i:hover {
+    color: #000;
+}
+
+.form-message .label {
+    margin: 15px 0;
+}
+.form-message .form-row {
+    width: 100%;
+}
+.form-message .form-row input{
+    line-height: 1.8;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+}
+.form-row.row-1 {
+    display: flex;
+    justify-content: space-between;
+}
+.row-1 div{
+    width: 48%;
+}
+.row-1  input {
+    width: 100%;
+}
+
+.row-2 input{
+    width: 100%;
+}
+
+.send-btn {
+    background-color: black;
+    float: right;
+    padding: 8px 16px;
+    margin: 16px 0;
+    color: #fff;
+    line-height: 1.8;
+    cursor: pointer;
+}
+
+.send-btn i {
+    color: white;
+}
+
+.send-btn:hover {
+    background-color: #ccc;
+    color: black;
+}
+.send-btn:hover i {
+    color: black;
+}
+
+/* CSS chung cho background-image */
+.blur {
+    opacity: 0.8;
+}
+.background-image {
+    background-attachment: fixed;
+    height:60vh;
+    position: relative;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.background-name {
+    /* max-height: 400px; */
+    background-color: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 10px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*CSS footer */
+.footer {
+    background-color: #777;
+    text-align: center;
+    padding: 64px 0;
+}
+.footer:hover {
+    background-color: black;
+}
+
+.footer .top-btn {
+    background-color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.footer .top-btn i {
+    padding-right: 12px;
+}
+.footer .top-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.footer .footer-icon i{
+    margin-top: 30px;
+    color: #fff;
+    font-size: 24px;
+}
+.footer .footer-icon i:hover {
+    color: #777;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    /* About ===================================*/
+    .about-content .row-2 {
+        flex-wrap: wrap;
+    }
+    .about-content .row-2 .about-image,
+    .about-content .row-2  .about-desc {
+        width: 100%;
+    }
+
+    /* Working done =============================*/
+    .total-list {
+        flex-wrap: wrap;
+    }
+    .total-list  .total-item {
+        width: 100%;
+    }
+
+    /* My work =============================*/
+    .mywork-images .row-images {
+        flex-wrap: wrap;
+    }
+    
+    .row-images .work-image {
+        padding: 8px;
+        width: 100%;
+    }
+
+    /* Work place =============================*/
+    .workplace-wrapper {
+        flex-wrap: wrap;
+    }
+    .workplace-wrapper .map {
+        width: 100%;
+    }
+    .workplace-wrapper .workplace-content {
+        width: 100%;
+        margin: 16px 0;
+        padding: 0 16px;
+    }
+
+    .form-row.row-1 {
+        flex-wrap: wrap;
+    }
+    .row-1 div{
+        width: 100%;
+    }
+    .row-1  input {
+        width: 100%;
+    }
+}
